@@ -14,7 +14,7 @@ A random number from the array is picked. Your task is to guess this number by m
 
 In this particular problem, when you make a request, you get **false** answer in 1 of 4 cases. For example, number 42 was picked and you are asking `is this number greater than 50?`. Then an imaginary die is rolled to determine whether to tell you truth of lie. With 1/4 chance you will get `False` (lie), otherwise you get `True`.
 
-Also there is another type of request: `Is the number [N]?`. In this case the answer is always **truth**. Thus, is the number picked is [N], you win, otherwise you continue playing.
+Also there is another type of request: `Is the number [N]?`. In this case the answer is always **truth**. Thus, if the number picked is [N], you win, otherwise you continue playing.
 
 ### Summary
 
