@@ -1,6 +1,6 @@
 # Broken Binsearch problem
 
-Will you solve this the most efficient way?
+Will you solve it the most efficient way?
 
 ## The problem
 
