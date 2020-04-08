@@ -1,14 +1,13 @@
-from random import randint
+from random import random, randint
 
 
-class game:
-
-    def __init__(self):
-        self.answer = randint(0, 100)
+class Game:
+    def __init__(self, p_lie, n):
+        self.answer = randint(0, n - 1)
         self.guess = -1
         self.c = 0
-        self.n = 100
-        self.chance = 4
+        self.n = n
+        self.chance = p_lie
 
     def pick(self, guess):
         self.c += 1
@@ -19,11 +18,8 @@ class game:
 
     def req(self, guess):
         self.c += 1
-        lie = randint(0, self.chance) == 0
-        if (self.answer > guess) ^ lie:
-            return 1
-        else:
-            return -1
+        lie = random() < self.chance
+        return (self.answer > guess) ^ lie
     
     def get_n(self):
         return self.answer
